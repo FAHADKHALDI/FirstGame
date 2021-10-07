@@ -63,6 +63,9 @@ function App() {
     setFirstCard({});
     setSecondCard({});
   };
+  function refreshPage() {
+    window.location.reload();
+  }
 
   return (
     <div className="app">
@@ -77,6 +80,9 @@ function App() {
             disabledCards={disabledCards}
           />
         ))}
+        <button class="button-3" onClick={refreshPage}>
+          Restart
+        </button>
       </div>
     </div>
   );
